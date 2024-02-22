@@ -1,7 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+Route::get('/hello', function () {
+ return 'Hello World';
+});
 
 /*
 |--------------------------------------------------------------------------
@@ -14,10 +16,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/hello', function () {
- return 'Hello World';
-});
-
-/*Route::get('/', function () {
+Route::get('/', function () {
     return view('welcome');
-});*/
+});
